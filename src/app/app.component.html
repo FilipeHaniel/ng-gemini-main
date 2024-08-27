@@ -1,0 +1,43 @@
+<mat-drawer-container autosize>
+  <mat-drawer opened mode="side">
+    <h2>Gemini</h2>
+
+    <div style="display: flex; flex-direction: column">
+      <button
+        mat-button
+        color="primary"
+        routerLink="text"
+        routerLinkActive="selected"
+      >
+        <mat-icon>chat_bubble</mat-icon>
+        Text
+      </button>
+      <button
+        mat-button
+        color="primary"
+        routerLink="chat"
+        routerLinkActive="selected"
+      >
+        <mat-icon>subject</mat-icon>
+        Chat
+      </button>
+      <button
+        mat-button
+        color="primary"
+        routerLink="vision"
+        routerLinkActive="selected"
+      >
+        <mat-icon>image</mat-icon>
+        Vision
+      </button>
+    </div>
+  </mat-drawer>
+
+  <mat-toolbar>
+    <h1>Build with AI and Angular</h1>
+  </mat-toolbar>
+
+  <main>
+    <router-outlet />
+  </main>
+</mat-drawer-container>
